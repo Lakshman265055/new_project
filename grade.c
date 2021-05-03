@@ -10,7 +10,7 @@ char grade(int avg)
     {
         return 'B';
     }
-    if(avg>=50 && avg>75)
+    if(avg>=50 && avg<75)
     {
         return 'A';
     }

@@ -1,0 +1,10 @@
+        -:    0:Source:avg.c
+        -:    0:Programs:0
+        -:    1:
+        -:    2:#include "head.h"
+    #####:    3:int avg(int x,int y,int z)
+        -:    4:{
+        -:    5:    int average;
+    #####:    6:    average=(x+y+z)/3;
+    #####:    7:    return average;
+        -:    8:}

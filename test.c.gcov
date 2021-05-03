@@ -1,0 +1,85 @@
+        -:    0:Source:test.c
+        -:    0:Programs:0
+        -:    1:#include "unity.h"
+        -:    2:#include "head.h"
+        -:    3:#include "unity_internals.h"
+        -:    4:
+        -:    5:
+        -:    6:/* Required by the unity test framework */
+    #####:    7:void setUp(){}
+------------------
+setUp:
+------------------
+setUp:
+------------------
+setUp:
+------------------
+setUp:
+------------------
+        -:    8:/* Required by the unity test framework */
+    #####:    9:void tearDown(){}
+------------------
+tearDown:
+------------------
+tearDown:
+------------------
+tearDown:
+------------------
+tearDown:
+------------------
+        -:   10:
+        -:   11:void test_grade(void);
+        -:   12:
+        -:   13:void test_avg(void);
+        -:   14:
+    #####:   15:int main(){
+        -:   16:
+    #####:   17:    UNITY_BEGIN();
+        -:   18:
+    #####:   19:    RUN_TEST(test_grade);
+    #####:   20:    RUN_TEST(test_avg);
+        -:   21:
+    #####:   22:    return UNITY_END();
+        -:   23:
+        -:   24:}
+------------------
+main:
+------------------
+main:
+------------------
+main:
+------------------
+main:
+------------------
+        -:   25:
+    #####:   26:void test_grade(void){
+        -:   27:
+    #####:   28:TEST_ASSERT_EQUAL('A',grade(60));
+    #####:   29:TEST_ASSERT_EQUAL('O',grade(76));
+        -:   30:
+    #####:   31:}
+------------------
+test_grade:
+------------------
+test_grade:
+------------------
+test_grade:
+------------------
+test_grade:
+------------------
+        -:   32:
+    #####:   33:void test_avg(void){
+        -:   34:
+    #####:   35:TEST_ASSERT_EQUAL(100,avg(100,100,100));
+    #####:   36:TEST_ASSERT_EQUAL(96,avg(100,90,100));
+        -:   37:
+    #####:   38:}
+------------------
+test_avg:
+------------------
+test_avg:
+------------------
+test_avg:
+------------------
+test_avg:
+------------------

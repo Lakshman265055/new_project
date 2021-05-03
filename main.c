@@ -2,14 +2,8 @@
 //#include<stdlib.h>
 #include "head.h"
 int average;
-typedef struct student
-{
-  int reg_no;
-  char name[100];
-  int maths_mar;
-  int eng_mar;
-  int telugu_mar;
-}stu;
+
+
 
 
 
@@ -18,8 +12,8 @@ int main()
     printf("number of students in you school\n");
     int n;
     scanf("%d",&n);
-    stu ob[n];
-    for(int i=0;i<n;i++)
+    student ob[n];
+    for(int i=0;i<=n;i++)
     {
     printf("enter reg no\n");
       scanf("%d",&ob[i].reg_no);
