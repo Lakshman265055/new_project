@@ -16,3 +16,6 @@ cov:
 	gcc -fprofile-arcs -ftest-coverage test.c avg.c grade.c unity.c -o test.exe
 	#after gcno file is generated..
 	gcov test.c avg.c grade.c unity.c
+
+analysis: test.c avg.c grade.c unity.c main.c
+	cppcheck --force enable=all $^
