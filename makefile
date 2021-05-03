@@ -12,7 +12,7 @@ clean:
 test:avg.c grade.c main.c test.c
 	gcc test.c avg.c grade.c unity.c -o test.out
 
-cov:
+coverage:
 	gcc -fprofile-arcs -ftest-coverage test.c avg.c grade.c unity.c -o test.exe
 	#after gcno file is generated..
 	gcov test.c avg.c grade.c unity.c
