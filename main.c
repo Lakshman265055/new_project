@@ -13,7 +13,7 @@ int main()
     int n;
     scanf("%d",&n);
     student ob[n];
-    for(int i=0;i<=n;i++)
+    for(int i=0;i<n;i++)
     {
     printf("enter reg no\n");
       scanf("%d",&ob[i].reg_no);
